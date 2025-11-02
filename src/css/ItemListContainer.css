@@ -1,0 +1,8 @@
+h1 {
+  color: black;
+  margin: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}

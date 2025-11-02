@@ -1,0 +1,22 @@
+.nav-container {
+  background-color: #fea321;
+  padding: 1rem;
+  justify-content: space-between;
+  display: flex;
+}
+
+.anchor-nav {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 2rem;
+  background-color: #fea321;
+}
+.logo-nav {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
