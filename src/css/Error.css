@@ -1,0 +1,31 @@
+.error404 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.error404 img {
+  width: 300px;
+  height: auto;
+}
+
+.error404 h1 {
+  font-size: 48px;
+  color: red;
+  margin-top: 20px;
+}
+.error404 p {
+  font-size: 18px;
+  color: black;
+  margin-top: 10px;
+}
+.error404 a {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+}
+.error404 a:hover {
+  text-decoration: underline;
+}

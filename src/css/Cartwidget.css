@@ -1,16 +1,15 @@
 .CartWidget {
-  display: flex;
-  align-items: center;
-  background-color: #ca811a;
-  border-radius: 10px;
-  padding: 7px;
-  border: 1px solid #b26e0f;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 0.18rem 0.5rem;
+  border-radius: 99px;
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 
 .CartWidget .material-symbols-outlined {
   font-size: 1.5rem;
-  background-color: #ca811a;
-  color: red;
+  color: rgb(68, 68, 68);
   font-weight: bolder;
   cursor: pointer;
 }
