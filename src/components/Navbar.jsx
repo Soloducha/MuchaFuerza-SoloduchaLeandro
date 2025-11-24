@@ -1,24 +1,27 @@
 import "../css/Navbar.css";
 import "../css/Cartwidget.css";
 import CartWidget from "./CartWidget";
+import { NavLink } from "react-router-dom";
 
 //Navbar
 const Navbar = () => {
   return (
     <nav className="nav-container">
-      <img src="./src/assets/logo.png" alt="logo" className="logo-nav" />
-      <a className="anchor-nav" href="#">
+      <NavLink to="/">
+        <img src="../src/assets/logo.png" alt="logo" className="logo-nav" />
+      </NavLink>
+      <NavLink className="anchor-nav" to="/category/cintas-de-correr">
         Cintas de Correr
-      </a>
-      <a className="anchor-nav" href="#">
+      </NavLink>
+      <NavLink className="anchor-nav" to="/category/bicicletas-fijas">
         Bicicletas Fijas
-      </a>
-      <a className="anchor-nav" href="#">
+      </NavLink>
+      <NavLink className="anchor-nav" to="/category/equipamientos">
         Equipamientos
-      </a>
-      <a className="anchor-nav" href="#">
+      </NavLink>
+      <NavLink className="anchor-nav" to="/category/accesorios">
         Accesorios
-      </a>
+      </NavLink>
       <CartWidget />
     </nav>
   );

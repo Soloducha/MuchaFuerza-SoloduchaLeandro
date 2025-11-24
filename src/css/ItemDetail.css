@@ -1,0 +1,106 @@
+.item-detail-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 400px;
+  margin: 12px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.item-detail-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+.item-detail-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.item-detail-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f5132;
+  background: rgba(22, 163, 74, 0.06);
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(16, 24, 40, 0.04);
+  margin-bottom: 12px;
+}
+.item-detail-description {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.btn-add-to-cart {
+  margin: 10px 0;
+  background-color: #fea321;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+.btn-add-to-cart:hover {
+  background-color: #b87516;
+  transform: translateY(-2px);
+}
+.btn-add-to-cart:focus-visible {
+  outline: 3px solid rgba(22, 163, 74, 0.18);
+  outline-offset: 3px;
+}
+@media (max-width: 480px) {
+  .item-detail-card {
+    padding: 12px;
+    max-width: 100%;
+  }
+}
+
+/* Skeleton loader to avoid content jumping */
+.item-detail-loading {
+  max-width: 420px;
+  margin: 12px auto;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.05) 25%,
+    rgba(0, 0, 0, 0.04) 37%,
+    rgba(0, 0, 0, 0.05) 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.2s linear infinite;
+  border-radius: 8px;
+}
+.skeleton.image {
+  height: 200px;
+}
+.skeleton.title {
+  height: 20px;
+  width: 70%;
+}
+.skeleton.price {
+  height: 18px;
+  width: 40%;
+}
+.skeleton.desc {
+  height: 56px;
+  width: 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
