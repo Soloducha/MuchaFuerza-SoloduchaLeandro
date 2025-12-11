@@ -6,19 +6,19 @@ Curso React
 
 Leandro Soloducha
 
-# Coder Flex App 🛒
+# Mucha Fuerza App 🛒
 
 Este proyecto fue realizado para enseñar las bases de React.
-![coderApp](/public/logo-shop.png)
+![coderApp](/src/assets/logo.png)
 
 ### Instalación 🤟
 
-    *Requisito técnico, contar con Node v20 o mayor  instalado en la pc.*
+    *Requisito técnico, contar con Node v18 o mayor  instalado en la pc.*
 
 1. Clone el repositorio.
-2. Hacer el comando `cd coder-flex-81725` para moverse a la carpeta raiz del proyecto.
+2. Ejecutar el comando `cd MuchaFuerza` para moverse a la carpeta raiz del proyecto.
 3. Instale dependencias con el comando `npm install`
-4. Para lefvantar el proyecto de manera local ejecute el comando `npm run dev`
+4. Para levantar el proyecto de manera local ejecute el comando `npm run dev`
 
 ### Version Host
 
