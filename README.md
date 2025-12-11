@@ -30,4 +30,4 @@ Si desea ver el proyecto online, puede ingresar al siguiente link: [Coder App ](
 - [React Router Dom](): utilizado para la navegación por rutas.
 - [React Bootstrap](): utilizado para el styling de la app.
 
-Desarrolado por
+Desarrolado por Leandro Soloducha
