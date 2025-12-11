@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import ItemCount from "./ItemCount";
 import "../css/ItemDetail.css";
+import { CartContext } from "../context/CartContext";
+import { Link } from "react-router-dom";
 
 const ItemDetail = ({ detail }) => {
+  const [purchase, setPurchase] = useState(false);
+  const { addItem, itemQuantity } = useContext(CartContext);
+
+  const onAdd = (cantidad) => {
+    addItem(detail, cantidad);
+    setPurchase(true);
+  };
+
   // Espera a que el detalle del producto esté definido y tenga propiedades
   if (!detail || Object.keys(detail).length === 0) {
     return (
@@ -10,10 +20,12 @@ const ItemDetail = ({ detail }) => {
         <div className="skeleton image" />
         <div className="skeleton title" />
         <div className="skeleton price" />
-        <div className="skeleton desc" />
+        <div className="skeleton description" />
       </div>
     );
   }
+
+  const stockUpdated = detail.stock - itemQuantity(detail.id);
 
   return (
     <div className="item-detail-card">
@@ -21,8 +33,15 @@ const ItemDetail = ({ detail }) => {
       <img src={detail.img} alt={detail.name} className="item-detail-image" />
       <p className="item-detail-price">U$D{detail.price}</p>
       <p className="item-detail-description">{detail.description}</p>
-      <ItemCount stock={detail.stock} />
-      <button className="btn-add-to-cart">Agregar al carrito</button>
+      {purchase ? (
+        <Link className="btn-add-to-cart" to="/cart">
+          Ir al carrito
+        </Link>
+      ) : (
+        <>
+          <ItemCount stock={stockUpdated} onAdd={onAdd} />
+        </>
+      )}
     </div>
   );
 };

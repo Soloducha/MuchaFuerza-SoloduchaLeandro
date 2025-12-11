@@ -1,14 +1,10 @@
-import { useState } from "react";
+import "../css/CartWidget.css";
 
-const CartWidget = () => {
-  const [contador, setCount] = useState(0);
-  const handleClick = () => {
-    setCount(contador + 1);
-  };
+const CartWidget = ({ counter }) => {
   return (
-    <div className="CartWidget" onClick={handleClick}>
+    <div className="CartWidget">
       <span className="material-symbols-outlined">🛒</span>
-      <span className="material-symbols-outlined">{contador}</span>
+      <span className="material-symbols-outlined">{counter}</span>
     </div>
   );
 };
