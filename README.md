@@ -1,17 +1,9 @@
-# React + Vite
+# Mucha Fuerza App 🛒 💪
 
-Coder House
-
-Curso React
-
-Leandro Soloducha
-
-# Mucha Fuerza App 🛒
-
-Este proyecto fue realizado para enseñar las bases de React.
+Este proyecto fue realizado para el curso de React de CoderHouse
 ![coderApp](/src/assets/logo.png)
 
-### Instalación 🤟
+### Instalación 💻
 
     *Requisito técnico, contar con Node v18 o mayor  instalado en la pc.*
 
@@ -20,14 +12,9 @@ Este proyecto fue realizado para enseñar las bases de React.
 3. Instale dependencias con el comando `npm install`
 4. Para levantar el proyecto de manera local ejecute el comando `npm run dev`
 
-### Version Host
-
-Si desea ver el proyecto online, puede ingresar al siguiente link: [Coder App ]()
-
 ### Librerias utilizadas 📖
 
-- [Firebase](): utilizado como base de datos.
-- [React Router Dom](): utilizado para la navegación por rutas.
-- [React Bootstrap](): utilizado para el styling de la app.
+- [Firebase](https://firebase.google.com/): utilizado como base de datos.
+- [React Router Dom](https://reactrouter.com/start/data/installation): utilizado para la navegación por rutas.
 
 Desarrolado por Leandro Soloducha
