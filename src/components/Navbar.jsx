@@ -6,7 +6,7 @@ import { useContext } from "react";
 
 //nabar con links a categorias y carrito
 const Navbar = () => {
-  const { cart } = useContext(CartContext);
+  const { cartQuantity } = useContext(CartContext);
   return (
     <nav className="nav-container">
       <NavLink to="/">
@@ -25,7 +25,7 @@ const Navbar = () => {
         Accesorios
       </NavLink>
       <NavLink to="/cart">
-        <CartWidget counter={cart.length} />
+        <CartWidget counter={cartQuantity()} />
       </NavLink>
     </nav>
   );

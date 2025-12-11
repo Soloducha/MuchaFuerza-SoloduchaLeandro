@@ -31,7 +31,7 @@ const ItemDetail = ({ detail }) => {
     <div className="item-detail-card">
       <h2 className="item-detail-name">{detail.name}</h2>
       <img src={detail.img} alt={detail.name} className="item-detail-image" />
-      <p className="item-detail-price">U$D{detail.price}</p>
+      <p className="item-detail-price">U$D {detail.price}</p>
       <p className="item-detail-description">{detail.description}</p>
       {purchase ? (
         <Link className="btn-add-to-cart" to="/cart">

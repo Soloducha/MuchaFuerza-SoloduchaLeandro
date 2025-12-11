@@ -69,7 +69,7 @@ const Checkout = () => {
         date: serverTimestamp(),
       };
       const ventas = collection(db, "orders");
-      console.log(ordenDeCompra);
+      // console.log(ordenDeCompra);
       addDoc(ventas, ordenDeCompra)
         .then((res) => {
           setOrderId(res.id);

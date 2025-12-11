@@ -35,7 +35,7 @@ const ItemListContainer = (props) => {
 
   useEffect(() => {
     if (category) {
-      console.log(category);
+      // console.log(category);
       if (category === "cintas-de-correr") {
         setDecorar("🏃‍♂️Cintas de Correr");
       } else if (category === "accesorios") {
@@ -56,7 +56,7 @@ const ItemListContainer = (props) => {
         <h1>
           {props.mensaje} {decorar}{" "}
         </h1>
-        {/* crear un spinner mientras se cargan los productos*/}
+
         <div className="spinner" role="status" aria-live="polite">
           <div className="double-bounce1"></div>
           <div className="double-bounce2"></div>

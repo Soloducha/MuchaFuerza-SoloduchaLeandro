@@ -15,7 +15,6 @@ const CartView = () => {
     settotalPrice(total);
   }, [cart]);
 
-  console.log(cart);
   return (
     <div className="cart-card">
       <h1>Tu 🛒 de compras</h1>
@@ -38,7 +37,7 @@ const CartView = () => {
                 Cantidad: {shoppingCart.quantity}
               </span>
               <span className="cart-text">
-                Subtotal:
+                Subtotal:&nbsp;
                 <strong>
                   U$D {shoppingCart.quantity * shoppingCart.price},00
                 </strong>
