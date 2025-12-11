@@ -1,0 +1,17 @@
+.btn-home {
+  background-color: orange;
+  color: white;
+  border: solid 1px orange;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+h3 {
+  margin: 1rem;
+}
+
+.empty-cart {
+  margin: 1rem;
+}

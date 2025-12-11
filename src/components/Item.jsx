@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import "../css/Item.css";
 import React from "react";
 
-//Item
-
+//item individual dentro del ItemList
 const Item = ({ product }) => {
   return (
     <div className="item-card">

@@ -1,10 +1,12 @@
 import "../css/Navbar.css";
-import "../css/Cartwidget.css";
 import CartWidget from "./CartWidget";
 import { NavLink } from "react-router-dom";
+import { CartContext } from "../context/CartContext";
+import { useContext } from "react";
 
-//Navbar
+//nabar con links a categorias y carrito
 const Navbar = () => {
+  const { cart } = useContext(CartContext);
   return (
     <nav className="nav-container">
       <NavLink to="/">
@@ -22,7 +24,9 @@ const Navbar = () => {
       <NavLink className="anchor-nav" to="/category/accesorios">
         Accesorios
       </NavLink>
-      <CartWidget />
+      <NavLink to="/cart">
+        <CartWidget counter={cart.length} />
+      </NavLink>
     </nav>
   );
 };

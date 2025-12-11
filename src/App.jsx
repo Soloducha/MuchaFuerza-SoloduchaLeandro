@@ -6,23 +6,28 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Error from "./components/Error";
+import { CartProvider } from "./context/CartContext";
+import CartContainer from "./components/CartContainer";
+import Checkout from "./components/Checkout";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   const nombre = "Bienvenidos a Mucha Fuerza!";
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<ItemListContainer mensaje={nombre} />} />
-        <Route
-          path="/category/:category"
-          element={<ItemListContainer mensaje={"Productos de la categoría:"} />}
-        />
-        <Route path="/product/:id" element={<ItemDetailContainer />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <CartProvider>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer mensaje={nombre} />} />
+          <Route
+            path="/category/:category"
+            element={<ItemListContainer mensaje={"Sección de :"} />}
+          />
+          <Route path="/product/:id" element={<ItemDetailContainer />} />
+          <Route path="/cart" element={<CartContainer />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </CartProvider>
       <Footer />
     </BrowserRouter>
   );
